@@ -1,0 +1,3 @@
+[submodule "src/gpc"]
+	path = src/gpc
+	url = https://github.com/rickbrew/GeneralPolygonClipper.git
