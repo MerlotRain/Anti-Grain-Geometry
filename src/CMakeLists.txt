@@ -1,0 +1,205 @@
+SET( util_HEADERS
+  ${CMAKE_SOURCE_DIR}/include/util/agg_color_conv_rgb8.h
+  ${CMAKE_SOURCE_DIR}/include/util/agg_color_conv_rgb16.h
+  ${CMAKE_SOURCE_DIR}/include/util/agg_color_conv.h )
+
+SET( antigrain_HEADERS
+    ${CMAKE_SOURCE_DIR}/include/agg_alpha_mask_u8.h
+    ${CMAKE_SOURCE_DIR}/include/agg_arc.h
+    ${CMAKE_SOURCE_DIR}/include/agg_array.h
+    ${CMAKE_SOURCE_DIR}/include/agg_arrowhead.h
+    ${CMAKE_SOURCE_DIR}/include/agg_basics.h
+    ${CMAKE_SOURCE_DIR}/include/agg_bezier_arc.h
+    ${CMAKE_SOURCE_DIR}/include/agg_bitset_iterator.h
+    ${CMAKE_SOURCE_DIR}/include/agg_blur.h
+    ${CMAKE_SOURCE_DIR}/include/agg_bounding_rect.h
+    ${CMAKE_SOURCE_DIR}/include/agg_bspline.h
+    ${CMAKE_SOURCE_DIR}/include/agg_clip_liang_barsky.h
+    ${CMAKE_SOURCE_DIR}/include/agg_pixfmt_base.h
+    ${CMAKE_SOURCE_DIR}/include/agg_color_gray.h
+    ${CMAKE_SOURCE_DIR}/include/agg_color_rgba.h
+    ${CMAKE_SOURCE_DIR}/include/agg_config.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_adaptor_vcgen.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_adaptor_vpgen.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_bspline.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_clip_polygon.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_clip_polyline.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_close_polygon.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_concat.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_contour.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_curve.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_dash.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_gpc.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_marker.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_marker_adaptor.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_segmentator.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_shorten_path.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_smooth_poly1.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_stroke.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_transform.h
+    ${CMAKE_SOURCE_DIR}/include/agg_conv_unclose_polygon.h
+    ${CMAKE_SOURCE_DIR}/include/agg_curves.h
+    ${CMAKE_SOURCE_DIR}/include/agg_dda_line.h
+    ${CMAKE_SOURCE_DIR}/include/agg_ellipse.h
+    ${CMAKE_SOURCE_DIR}/include/agg_ellipse_bresenham.h
+    ${CMAKE_SOURCE_DIR}/include/agg_embedded_raster_fonts.h
+    ${CMAKE_SOURCE_DIR}/include/agg_font_cache_manager.h
+    ${CMAKE_SOURCE_DIR}/include/agg_gamma_functions.h
+    ${CMAKE_SOURCE_DIR}/include/agg_gamma_lut.h
+    ${CMAKE_SOURCE_DIR}/include/agg_glyph_raster_bin.h
+    ${CMAKE_SOURCE_DIR}/include/agg_gradient_lut.h
+    ${CMAKE_SOURCE_DIR}/include/agg_gsv_text.h
+    ${CMAKE_SOURCE_DIR}/include/agg_image_accessors.h
+    ${CMAKE_SOURCE_DIR}/include/agg_image_filters.h
+    ${CMAKE_SOURCE_DIR}/include/agg_line_aa_basics.h
+    ${CMAKE_SOURCE_DIR}/include/agg_math.h
+    ${CMAKE_SOURCE_DIR}/include/agg_math_stroke.h
+    ${CMAKE_SOURCE_DIR}/include/agg_path_length.h
+    ${CMAKE_SOURCE_DIR}/include/agg_path_storage.h
+    ${CMAKE_SOURCE_DIR}/include/agg_path_storage_integer.h
+    ${CMAKE_SOURCE_DIR}/include/agg_pattern_filters_rgba.h
+    ${CMAKE_SOURCE_DIR}/include/agg_pixfmt_amask_adaptor.h
+    ${CMAKE_SOURCE_DIR}/include/agg_pixfmt_gray.h
+    ${CMAKE_SOURCE_DIR}/include/agg_pixfmt_rgb.h
+    ${CMAKE_SOURCE_DIR}/include/agg_pixfmt_rgb_packed.h
+    ${CMAKE_SOURCE_DIR}/include/agg_pixfmt_rgba.h
+    ${CMAKE_SOURCE_DIR}/include/agg_pixfmt_transposer.h
+    ${CMAKE_SOURCE_DIR}/include/agg_rasterizer_cells_aa.h
+    ${CMAKE_SOURCE_DIR}/include/agg_rasterizer_compound_aa.h
+    ${CMAKE_SOURCE_DIR}/include/agg_rasterizer_outline.h
+    ${CMAKE_SOURCE_DIR}/include/agg_rasterizer_outline_aa.h
+    ${CMAKE_SOURCE_DIR}/include/agg_rasterizer_scanline_aa.h
+    ${CMAKE_SOURCE_DIR}/include/agg_rasterizer_sl_clip.h
+    ${CMAKE_SOURCE_DIR}/include/agg_renderer_base.h
+    ${CMAKE_SOURCE_DIR}/include/agg_renderer_markers.h
+    ${CMAKE_SOURCE_DIR}/include/agg_renderer_mclip.h
+    ${CMAKE_SOURCE_DIR}/include/agg_renderer_outline_aa.h
+    ${CMAKE_SOURCE_DIR}/include/agg_renderer_outline_image.h
+    ${CMAKE_SOURCE_DIR}/include/agg_renderer_primitives.h
+    ${CMAKE_SOURCE_DIR}/include/agg_renderer_raster_text.h
+    ${CMAKE_SOURCE_DIR}/include/agg_renderer_scanline.h
+    ${CMAKE_SOURCE_DIR}/include/agg_rendering_buffer.h
+    ${CMAKE_SOURCE_DIR}/include/agg_rendering_buffer_dynarow.h
+    ${CMAKE_SOURCE_DIR}/include/agg_rounded_rect.h
+    ${CMAKE_SOURCE_DIR}/include/agg_scanline_bin.h
+    ${CMAKE_SOURCE_DIR}/include/agg_scanline_boolean_algebra.h
+    ${CMAKE_SOURCE_DIR}/include/agg_scanline_p.h
+    ${CMAKE_SOURCE_DIR}/include/agg_scanline_storage_aa.h
+    ${CMAKE_SOURCE_DIR}/include/agg_scanline_storage_bin.h
+    ${CMAKE_SOURCE_DIR}/include/agg_scanline_u.h
+    ${CMAKE_SOURCE_DIR}/include/agg_shorten_path.h
+    ${CMAKE_SOURCE_DIR}/include/agg_simul_eq.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_allocator.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_converter.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_gouraud.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_gouraud_gray.h
+    ${CMAKE_SOURCE_DIR}/include/agg_rasterizer_scanline_aa_nogamma.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_gouraud_rgba.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_gradient.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_gradient_alpha.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_image_filter.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_image_filter_gray.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_image_filter_rgb.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_image_filter_rgba.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_interpolator_adaptor.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_interpolator_linear.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_interpolator_persp.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_interpolator_trans.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_pattern_gray.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_pattern_rgb.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_pattern_rgba.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_solid.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_subdiv_adaptor.h
+    ${CMAKE_SOURCE_DIR}/include/agg_trans_affine.h
+    ${CMAKE_SOURCE_DIR}/include/agg_trans_bilinear.h
+    ${CMAKE_SOURCE_DIR}/include/agg_trans_double_path.h
+    ${CMAKE_SOURCE_DIR}/include/agg_trans_perspective.h
+    ${CMAKE_SOURCE_DIR}/include/agg_trans_single_path.h
+    ${CMAKE_SOURCE_DIR}/include/agg_trans_viewport.h
+    ${CMAKE_SOURCE_DIR}/include/agg_trans_warp_magnifier.h
+    ${CMAKE_SOURCE_DIR}/include/agg_vcgen_bspline.h
+    ${CMAKE_SOURCE_DIR}/include/agg_vcgen_contour.h
+    ${CMAKE_SOURCE_DIR}/include/agg_vcgen_dash.h
+    ${CMAKE_SOURCE_DIR}/include/agg_vcgen_markers_term.h
+    ${CMAKE_SOURCE_DIR}/include/agg_vcgen_smooth_poly1.h
+    ${CMAKE_SOURCE_DIR}/include/agg_vcgen_stroke.h
+    ${CMAKE_SOURCE_DIR}/include/agg_vcgen_vertex_sequence.h
+    ${CMAKE_SOURCE_DIR}/include/agg_vertex_sequence.h
+    ${CMAKE_SOURCE_DIR}/include/agg_vpgen_clip_polygon.h
+    ${CMAKE_SOURCE_DIR}/include/agg_vpgen_clip_polyline.h
+    ${CMAKE_SOURCE_DIR}/include/agg_vpgen_segmentator.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_gradient_contour.h
+    ${CMAKE_SOURCE_DIR}/include/agg_span_gradient_image.h
+)
+
+ADD_LIBRARY( antigrain
+    agg_arc.cpp
+    agg_arrowhead.cpp
+    agg_bezier_arc.cpp
+    agg_bspline.cpp
+    agg_curves.cpp
+    agg_embedded_raster_fonts.cpp
+    agg_gsv_text.cpp
+    agg_image_filters.cpp
+    agg_line_aa_basics.cpp
+    agg_line_profile_aa.cpp
+    agg_rounded_rect.cpp
+    agg_sqrt_tables.cpp
+    agg_trans_affine.cpp
+    agg_trans_double_path.cpp
+    agg_trans_single_path.cpp
+    agg_trans_warp_magnifier.cpp
+    agg_vcgen_bspline.cpp
+    agg_vcgen_contour.cpp
+    agg_vcgen_dash.cpp
+    agg_vcgen_markers_term.cpp
+    agg_vcgen_smooth_poly1.cpp
+    agg_vcgen_stroke.cpp
+    agg_vpgen_clip_polygon.cpp
+    agg_vpgen_segmentator.cpp
+
+    ${antigrain_HEADERS}
+)
+
+
+#controls code for interactive modifying samples
+SET( controls_HEADERS
+    ${CMAKE_SOURCE_DIR}/include/ctrl/agg_slider_ctrl.h
+    ${CMAKE_SOURCE_DIR}/include/ctrl/agg_spline_ctrl.h
+    ${CMAKE_SOURCE_DIR}/include/ctrl/agg_scale_ctrl.h
+    ${CMAKE_SOURCE_DIR}/include/ctrl/agg_rbox_ctrl.h
+    ${CMAKE_SOURCE_DIR}/include/ctrl/agg_polygon_ctrl.h
+    ${CMAKE_SOURCE_DIR}/include/ctrl/agg_gamma_spline.h
+    ${CMAKE_SOURCE_DIR}/include/ctrl/agg_gamma_ctrl.h
+    ${CMAKE_SOURCE_DIR}/include/ctrl/agg_ctrl.h
+    ${CMAKE_SOURCE_DIR}/include/ctrl/agg_cbox_ctrl.h
+    ${CMAKE_SOURCE_DIR}/include/ctrl/agg_bezier_ctrl.h
+)
+
+ADD_LIBRARY( controls
+    ctrl/agg_spline_ctrl.cpp
+    ctrl/agg_slider_ctrl.cpp
+    ctrl/agg_scale_ctrl.cpp
+    ctrl/agg_rbox_ctrl.cpp
+    ctrl/agg_polygon_ctrl.cpp
+    ctrl/agg_gamma_spline.cpp
+    ctrl/agg_gamma_ctrl.cpp
+    ctrl/agg_cbox_ctrl.cpp
+    ctrl/agg_bezier_ctrl.cpp
+
+    ${controls_HEADERS}
+)
+
+if(AGG_USE_FREETYPE)
+    include_directories(${CMAKE_CURRENT_SOURCE_DIR}/font_freetype)
+endif()
+
+
+if(WIN32)
+    include_directories(${CMAKE_CURRENT_LIST_DIR}/font_win32_tt)
+endif()
+if(UNIX)
+    add_library(platform 
+    ${CMAKE_SOURCE_DIR}/include/platform/agg_platform_support.h
+    platform/X11/agg_platform_support.cpp)
+endif()
